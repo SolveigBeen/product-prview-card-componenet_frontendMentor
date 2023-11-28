@@ -1,0 +1,21 @@
+@import url(https://fonts.google.com/specimen/Montserrat);
+@import url(https://fonts.google.com/specimen/Fraunces);
+
+h1 {
+  font-family: Fraunces;
+  color:red;
+}
+
+
+
+
+
+
+
+
+
+.price-box {
+  display: flex;
+  justify-content: flex-start;
+  gap:3rem;
+}
