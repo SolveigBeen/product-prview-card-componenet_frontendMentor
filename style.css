@@ -1,21 +1,121 @@
-@import url(https://fonts.google.com/specimen/Montserrat);
-@import url(https://fonts.google.com/specimen/Fraunces);
-
-h1 {
-  font-family: Fraunces;
-  color:red;
+* {
+  font-family: 'Montserrat';
+  font-size: 1rem;
 }
 
+h1 {
+  font-family: 'Fraunces';
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top:1rem;
+}
 
+h2 {
+  font-family: 'Fraunces';
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: hsl(158, 36%, 37%);
+    margin:0;
+  }
 
+h5 {
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  margin:0
+}
 
+p {  
+  line-height:175%;
+}
 
+.font--strikethrough {
+  text-decoration-line: line-through;
+  text-decoration-color: #7e7d7d
+}
 
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(30, 38%, 92%);
+  box-sizing: border-box;
+}
 
-
+main {
+  border-radius: 10px;
+  overflow:hidden;
+  background-color: white;
+}
 
 .price-box {
   display: flex;
   justify-content: flex-start;
-  gap:3rem;
+  gap:2rem;
+  align-items: center;
+}
+
+.add-btn{
+  background-color: hsl(158, 36%, 37%);
+  color: white;
+  padding: 1rem;
+  width:100%;
+  font-size: 1rem;
+ border:none;
+ border-radius: 1rem;
+}
+
+.cart-icon {
+  margin:0 1rem;
+}
+
+@media screen and (min-width:401px) {
+
+  body {
+    height:80vh;
+  }
+
+  main {
+    display: flex;
+    width:700px;
+   margin:0;
+  }
+  
+  .image--desktop {
+    width: 350px;
+   height: 100%;
+  }
+ 
+  section {
+  width:350px;
+  padding:3rem;
+  margin:0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  }
+
+  .image--mobile {
+      display:none;
+  }
+}
+
+
+@media screen and (max-width:480px) {
+
+  .image--desktop {
+      display:none;
+  }
+
+  .image--mobile{
+  max-width:375px;
+}
+
+  main{
+    width:375px;
+    margin:0.5rem;
+  }
+
+  section {
+    padding:1rem;
+  }
 }
